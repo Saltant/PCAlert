@@ -17,7 +17,7 @@ namespace PCAlert
         IPStatus status;
         public Worker(IConfiguration configuration)
         {
-            ip = configuration.GetSection("Config")["IPAdress"];
+            ip = configuration.GetSection("Config")["IPAddress"];
             timeout = int.Parse(configuration.GetSection("Config")["Timeout"]);
             maxLoss = int.Parse(configuration.GetSection("Config")["MaxLoss"]);
         }
